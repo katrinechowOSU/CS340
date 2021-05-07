@@ -1,0 +1,19 @@
+table, th, td {
+  border: 1px white;
+}
+
+th, td {
+  padding: 30px;
+}
+
+th {
+  text-align: left;
+}
+
+table {
+  border-spacing: 15px;
+}
+
+table {
+  margin: 30px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)https://web.engr.oregonstate.edu/~damahen/cs340_websitew/players/players.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit-cover">
+    <title>Players</title>
+    <link href="./Players_files/icon" rel="stylesheet">
+    <link href="./Players_files/styles.css" rel="stylesheet">
+    <link href="./Players_files/players.css" rel="stylesheet">
+    <script src="./Players_files/jquery-3.3.1.min.js.download"></script><script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script>
+</head>
+<body id="primary-background">
+    <nav class="container-lg">
+    <div class="nav-container">
+        <ul>
+            <li>
+                <a href="https://web.engr.oregonstate.edu/~damahen/cs340_websitew/leagues/leagues.html">Leagues</a>
+            </li>
+            <li>
+                <a href="https://web.engr.oregonstate.edu/~damahen/cs340_websitew/players/players.html#!">Players</a>
+            </li>
+            <li>
+                <a href="https://web.engr.oregonstate.edu/~damahen/cs340_websitew/teams/teams.html">Teams</a>
+            </li>
+            <li>
+                <a href="https://web.engr.oregonstate.edu/~damahen/cs340_websitew/tournaments/tournaments.html">Tournaments</a>
+            </li>
+            <li>
+                <a href="https://web.engr.oregonstate.edu/~damahen/cs340_websitew/tournaments/leaguestournaments.html">Leagues_Tournaments</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <section class="search-page container-lg">
+        <section class="search-intro">
+            <h1>Players involved in the professional League Scene</h1>
+            <p>In this section, users can find information containing the history of various players that have competed to date. This information provides various statistics such as
+              the username of the player, the players first and last name, what team they are playing for (if any), and what was their previous team (if any)
+            </p>
+            <p>To aid in the users search, users can apply a filter to help better query results to their liking.
+            </p>
+
+            <table style="width:100%">
+                <tbody><tr>
+                  <th>playerID</th>
+                  <th>username</th>
+                  <th>firstName</th>
+                  <th>lastName</th>
+                  <th>CurrentTeam</th>
+                  <th>previousTeam</th>
+                </tr>
+                <tr>
+                    <th>01</th>
+                    <th>Showmaker</th>
+                    <th>Heo</th>
+                    <th>Su</th>
+                    <th>01</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>02</th>
+                    <th>Rekkles</th>
+                    <th>Martin</th>
+                    <th>Larsson</th>
+                    <th>03</th>
+                    <th>02</th>
+                </tr>
+              </tbody></table>
+            <br>
+            <h1>Add/Update/Remove Entries</h1>
+            <form>
+            <label for="username">Enter Player username:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="firstName">Enter Player first name:</label>
+            <input type="text" id="firstName" name="firstName"><br><br>
+            <label for="lastName">Enter Player last name:</label>
+            <input type="text" id="lastName" name="lastName"><br><br>
+            <label for="currentTeam">Enter Player's current team:</label>
+            <input type="text" id="currentTeam" name="currentTeam"><br><br>
+            <label for="previousTeam">Enter Player's previous team:</label>
+            <input type="text" id="previousTeam" name="previousTeam" placeholder="Optional"><br><br>
+            <input type="submit" value="Insert">
+            <input type="submit" value="Update">
+            <input type="submit" value="Delete">
+            </form>
+            <br>
+            <h1>Enter Search Criteria</h1>
+            <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+            <label for="champ">Enter Player name:</label>
+            <input type="text" id="champ" name="champ"><br><br>
+            <label for="elo">Enter Previous Team ID (Get ID from Teams Section):</label>
+            <input type="text" id="elo" name="elo"><br><br>
+            <label for="lenmin">Year Current Team ID (Get Id from Teams section):</label>
+            <input type="text" id="lenmin" name="lenmin"><br><br>
+            <input type="submit" value="Submit">
+</form>
+
+        </section>
+
+</section></body></html>

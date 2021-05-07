@@ -1,0 +1,491 @@
+@charset "UTF-8";
+@import "lato.css";
+@import "montserrat.css";
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    font-family: Montserrat, Lato, sans-serif;
+    line-height: 1.4;
+    font-size: 14px;
+    -webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body#primary-background {
+    background-image: url("../imghome/general/background.jpg");
+    background-repeat: repeat;
+}
+
+.container-lg {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+#video-background {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    z-index: 5;
+}
+
+.video-banner > video {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.intro-content {
+    position: absolute;
+    top: 18%;
+    left: 0;
+    right: 0;
+}
+
+.intro {
+    margin-bottom: 50px;
+}
+
+.intro h1 {
+    font-size: 2.6em;
+    text-shadow: 0 0 1px transparent, 0 0 5px rgba(0,0,0,.8);
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.intro p {
+    color: #ebdec2;
+    max-width: 65%;
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.intro h4 {
+    font-size: 1.3em;
+}
+
+.info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.info .card-container {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 0 0 auto;
+    color: #fff;
+    text-decoration: none;
+    width: calc((100% / 2) - 1.5em);
+    padding: 1.25em;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 0 1px #000;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: background ease-in-out .15s;
+}
+
+.info .card-container:hover {
+    background-color: rgba(255, 255, 255, 0.30);
+}
+
+.card-icon {
+    display: block;
+    position: relative;
+    flex: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+}
+
+.icon-league {
+    background-image: url("../imghome/icons/league_icon.jpg");
+}
+
+.icon-forum {
+    background-image: url("../imghome/icons/forum_icon.png");
+}
+
+.card-text {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 25px;
+}
+
+.card-text > h1 {
+    font-size: 1.25em;
+}
+
+.card-text > p {
+    margin-top: 5px;
+}
+
+
+.video-control {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+#car-section {
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px;
+}
+
+.btn-alpha {
+    background-color: #35a0ff;
+    color: #fff;
+}
+
+.icon-play-container {
+    width: 36px;
+    height: 36px;
+    background-color: rgba(0, 0, 0, 0.35);
+    fill: #fff;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: ease-in-out .15s;
+}
+
+.icon-play-container:hover {
+    opacity: 1;
+}
+
+
+nav {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    height: 40px;
+    display: flex;
+    width: 100%;
+    line-height: inherit;
+    z-index: 15;
+}
+
+nav .nav-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+nav .nav-container > ul {
+    height: inherit;
+}
+
+nav .nav-container > ul > li {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-align: left;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+nav .nav-container > ul > li {
+    margin: 0 10px;
+}
+
+nav .nav-container > ul > li > a {
+    padding: 5px 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 0 0 1px #000;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: background ease-in-out .15s;
+}
+
+nav .nav-container > ul > li > a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    background-color: #f15a24;
+    height: 1.5px;
+    width: 100%;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: ease-in-out 0.15s;
+}
+
+nav .nav-container > ul > li > a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+nav .nav-container > ul > li > a:hover {
+    background-color: rgba(255, 255, 255, 0.30);
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+nav .logo {
+    position: relative;
+    display: flex;
+}
+
+nav .logo svg {
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    padding: 5px;
+}
+
+nav .logo svg .logo-base-color {
+    fill: #f15a24;
+}
+
+nav .logo svg .logo-accent-color {
+    fill: #000;
+}
+
+.sticky-column {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 56px;
+}
+
+
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.carousel-slides {
+    display: none;
+}
+
+.dot-container {
+    text-align: center;
+    background-color: #000;
+    padding: 5px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 7.5px;
+    width: 7.5px;
+    margin: 0 2px;
+    background-color: #717171;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .15s ease-in-out;
+}
+
+.active, .dot:hover {
+    background-color: #bbb;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .2}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .2}
+    to {opacity: 1}
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 0 0 1px #000;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: background ease-in-out .15s;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.30);
+}
+
+.background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.background-1 {
+    background-image: url("../imghome/general/worlds2020.png");
+}
+
+.background-2 {
+    background-image: url("../imghome/general/as2020.jpg");
+    background-position: 100% 30%;
+}
+
+.carousel-slide-content {
+    display: block;
+    color: #fff;
+    text-align: right;
+    text-shadow: 0 0 1px transparent, 0 0 5px rgba(0,0,0,.8);
+}
+
+.carousel-slide-content > h1 {
+    padding-top: 100px;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+.carousel-slide-content > p {
+    margin: 0 0 0 auto;
+    max-width: 50%;
+}
+
+.download-btn,
+.carousel-btn {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    padding: 15px;
+    margin-top: 25px;
+    box-shadow: 0 0 0 1px #000;
+    background-color: rgba(241, 60, 55, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    transition: background ease-in-out .15s;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.download-btn > span,
+.carousel-btn > span {
+    position: relative;
+    top: 1px;
+}
+
+.download-btn:hover,
+.carousel-btn:hover {
+    background-color: rgba(241, 60, 55, 0.85);
+}
+
+.download-btn > i,
+.carousel-btn > i {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+.divider {
+    height: 10px;
+    width: 100%;
+    background-color: #000000;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    font-size: 0.85em;
+    padding: 100px;
+    color: #fff;
+}
+
+footer .copyright-notice {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.adc-intro,
+.mid-intro,
+.search-intro {
+    margin-top: 100px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.adc-intro h1,
+.mid-intro h1,
+.search-intro h1 {
+    font-size: 2.6em;
+    margin-bottom: 15px;
+}
+
+.adc-intro p,
+.mid-intro p,
+.search-intro p {
+    color: #ebdec2;
+    margin-bottom: 5px;
+}
+
+.search-table-container {
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.search-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    color: #fff;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.mid-intro ul {
+    padding-left: 30px;
+    margin: 15px 0;
+}
+
+.adc-intro > .scrollbox {
+    height: 150px;
+    overflow-y: scroll;
+}
+
+.mid-intro > .scrollbox {
+    height: 150px;
+    overflow-y: scroll;
+}
+.adc-intro ul {
+    padding-left: 30px;
+    margin: 15px 0;
+}

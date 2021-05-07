@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- saved from url=(0085)https://web.engr.oregonstate.edu/~damahen/cs340_websitew/tournaments/tournaments.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit-cover">
+    <title>Tournaments</title>
+    <link href="./Tournaments_files/icon" rel="stylesheet">
+    <link href="./Tournaments_files/styles.css" rel="stylesheet">
+    <link href="./Tournaments_files/tournaments.css" rel="stylesheet">
+    <script src="./Tournaments_files/jquery-3.3.1.min.js.download"></script><script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script>
+</head>
+<body id="primary-background">
+    <nav class="container-lg">
+    <div class="nav-container">
+        <ul>
+            <li>
+                <a href="https://web.engr.oregonstate.edu/~damahen/cs340_websitew/leagues/leagues.html">Leagues</a>
+            </li>
+            <li>
+                <a href="https://web.engr.oregonstate.edu/~damahen/cs340_websitew/players/players.html">Players</a>
+            </li>
+            <li>
+                <a href="https://web.engr.oregonstate.edu/~damahen/cs340_websitew/teams/teams.html">Teams</a>
+            </li>
+            <li>
+                <a href="https://web.engr.oregonstate.edu/~damahen/cs340_websitew/tournaments/tournaments.html#!">Tournaments</a>
+            </li>
+            <li>
+                <a href="https://web.engr.oregonstate.edu/~damahen/cs340_websitew/tournaments/leaguestournaments.html">Leagues_Tournaments</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <section class="search-page container-lg">
+        <section class="search-intro">
+            <h1>Various Tournaments throughout the years</h1>
+            <p>In this section, users can find various tournmanent data for various tournaments (both at an international/regional level), dating back to the earliest known tournmanet.
+              Information included is as follows: Year the tournament took place, the location of the tournament, the name of the tournament, the format of the tournament,
+              the teams involved, the winner, the reward/prize money, the number of participants, and the leagues involved.
+            </p>
+            <p>To aid in the users search, users can apply a filter to help better query results to their liking.
+            </p>
+
+            <table style="width:100%">
+                <tbody><tr>
+                  <th>tournamentID</th>
+                  <th>year</th>
+                  <th>location</th>
+                  <th>tournamentName</th>
+                  <th>format</th>
+                  <th>participant</th>
+                  <th>winner</th>
+                  <th>reward</th>
+                  <th>numberParticipant</th>
+                  <th>leaguesParticpating</th>
+                </tr>
+                <tr>
+                  <th>01</th>
+                  <th>2020</th>
+                  <th>Shanghai, CN</th>
+                  <th>World's 2020</th>
+                  <th>Single Elimination</th>
+                  <th></th>
+                  <th>Damwon Gaming</th>
+                  <th>556250</th>
+                  <th>22</th>
+                  <th>10</th>
+                </tr>
+              </tbody></table>
+            <br>
+            <h1>Add/Update/Remove Entries</h1>
+            <form>
+            <label for="year">Enter Tournament Year:</label>
+            <input type="text" id="year" name="year"><br><br>
+            <label for="location">Enter Tournament Location:</label>
+            <input type="text" id="location" name="location"><br><br>
+            <label for="name">Enter Tournament Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="format">Enter Tournament Format:</label>
+            <input type="text" id="format" name="format"><br><br>
+            <label for="winner">Enter Tournament Winner:</label>
+            <input type="text" id="winner" name="winner"><br><br>
+            <label for="reward">Enter Tournament Reward:</label>
+            <input type="text" id="reward" name="reward"><br><br>
+            <input type="submit" value="Insert">
+            <input type="submit" value="Update">
+            <input type="submit" value="Delete">
+          </form>
+          <br>
+
+
+            <h1>Enter Search Criteria</h1>
+            <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+            <label for="champ">Enter Tournament name:</label>
+            <input type="text" id="champ" name="champ"><br><br>
+            <label for="elo">Enter year:</label>
+            <input type="text" id="elo" name="elo"><br><br>
+            <label for="lenmin">Year Location:</label>
+            <input type="text" id="lenmin" name="lenmin"><br><br>
+            <label for="lenmax">Enter Winner:</label>
+            <input type="text" id="lenmax" name="lenmax"><br><br>
+            <label for="lenmax">Enter format:</label>
+            <input type="text" id="lenmax" name="lenmax"><br><br>
+            <label for="lenmax">Enter reward:</label>
+            <input type="text" id="lenmax" name="lenmax"><br><br>
+            <label for="lenmax">Enter Participating Leagues (Refer to League section for ID's):</label>
+            <input type="text" id="lenmax" name="lenmax"><br><br>
+            <input type="submit" value="Submit">
+</form>
+
+        </section>
+
+</section></body></html>
